@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text " id="firstNum">    
+<input type="text " id="reizinums">    
+<input type="text " id="secendNum">    
+<button id="button">Rēķināt</button>
+<p id="output"></p>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+</style>
+<script>
+    let button = document.getElementById("button");
+    button.addEventListener("click", rezinat);
+    function rezinat() {
+        let firstNum = parseInt(document.getElementById("firstNum").value);
+        let secendNum = parseInt(document.getElementById("secendNum").value);
+        let reizinums = document.getElementById("reizinums").value;
+    let output = document.getElementById("output")
+
+    if (reizinums == "+") {
+ output.innerHTML  =  "Rezultāts: " + (firstNum + secendNum);
+} else if (reizinums == "-") {
+ output.innerHTML = "Rezultāts: " + (firstNum - secendNum);
+} else if (reizinums == "*") {
+    output.innerHTML = "Rezultāts: " + (firstNum * secendNum);
+} else if (reizinums == "/") {
+    output.innerHTML = "Rezultāts: " + (firstNum / secendNum);
+} else output.innerHTML = "nav teksts";
+    return ("Rezultāts") + output.innerHTML
+    }
+</script>
+</body>
+</html>

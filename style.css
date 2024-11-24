@@ -1,0 +1,12 @@
+* {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    width: 200px;
+    margin: auto;
+
+
+}
